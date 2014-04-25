@@ -158,10 +158,45 @@ $(function(){
 
 
 
+/*
+function onDeviceReady() {
+	document.addEventListener("backbutton", handleBackButton, true);
+}
+
+function handleBackButton(){
+	if($.mobile.activePage.attr('id') == 'inicio'){
+		//navigator.app.exitApp();
+		alert('Hola');
+	}else{
+		navigator.app.backHistory();
+	}
+}
+ 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+
+
+
+
+
+
+document.addEventListener("backbutton", function(e){
+	if($.mobile.activePage.is('#inicio')){
+		e.preventDefault();
+		alert('estas en el home D:');
+	}
+}, false);
+
+*/
+
+
+
+
 	$("#boton_salir").on('click', function(evento){
-		evento.preventDefault();
-		navigator.app.exitApp();
+		//evento.preventDefault();
+		//navigator.app.exitApp();
 		//alert('Me doste click');
+		document.window.close();
 	});
   
 

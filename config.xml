@@ -23,7 +23,7 @@
     
 
     <icon src="img/gap/icon.png" width="64" height="64"/>
-    <gap:splash src="splash.jpg" />
+    <gap:splash src="img/gap/splash.jpg" />
 
 </widget>
 
