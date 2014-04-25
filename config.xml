@@ -9,6 +9,8 @@
 
     <name>Beta Expo App</name>
 
+    <gap:splash src="splash.jpg" />
+
     <preference name="Orientation" value="landscape"/>
     <preference name="Fullscreen" value="true"/>
 
@@ -24,13 +26,7 @@
 
     <icon src="img/gap/icon.png" width="64" height="64"/>
 
-    <gap:splash src="img/splash/gap/a_320x480.jpg" gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="img/splash/gap/a_640x960.jpg" gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="img/splash/gap/a_640x960.jpg" gap:platform="android" gap:density="hdpi" />
-
     <gap:platform name="android" />
-
-    <preference name="splash-screen-duration" value="5000"/>
 
 </widget>
 
