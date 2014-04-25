@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<title>App de la EXPO 2014</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="js/gmaps.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+</head>
+
+<body>
+
+
+	<div data-role="page" id="inicio">
+<!--
+<div class="img_fondos" id="fondo_arbol"></div>
+<div class="img_fondos" id="fondo_bicicleta"></div>
+<div class="img_fondos" id="fondo_carreola"></div>
+<div class="img_fondos" id="fondo_conejo"></div>
+<div class="img_fondos" id="fondo_dados"></div>
+-->
+
+		<div data-role="header" data-position="fixed">
+			<div class="logo"></div>
+			<div class="pleca"></div>
+			<a class="ui-btn-right" href="#" data-role="button" data-inline="true" data-icon="power" id="boton_salir" data-theme="b">Salir</a>
+		</div>
+
+		<div data-role="main" class="ui-content">
+
+			<a href="#pagina_expositores" data-transition="slideup">
+			<div class="menu_item" id="menu_expositores">
+				<div class="menu_titulo" id="expositores_txt"></div>
+			</div>
+			</a>
+
+
+			<a href="#pagina_quienes" data-transition="slideup">
+			<div class="menu_item" id="menu_quienes">
+				<div class="menu_titulo" id="quienes_txt"></div>
+			</div>
+			</a>
+
+
+			<a href="#pagina_servicios" data-transition="slideup">
+			<div class="menu_item" id="menu_servicios">
+				<div class="menu_titulo" id="servicios_txt"></div>
+			</div>
+			</a>
+
+
+			<a href="#pagina_llegar" data-transition="slideup">
+			<div class="menu_item" id="menu_llegar">
+				<div class="menu_titulo" id="llegar_txt"></div>
+			</div>
+			</a>
+
+
+			<a href="#pagina_contacto" data-transition="slideup">
+			<div class="menu_item" id="menu_contacto">
+				<div class="menu_titulo" id="contacto_txt"></div>
+			</div>
+			</a>
+
+
+			<a href="#pagina_fantasma" data-transition="slideup">
+			<div class="menu_item" id="menu_fantasma">
+				<div class="menu_titulo" id="fantasma_txt"></div>
+			</div>
+			</a>
+
+
+
+		</div>
+
+	</div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+	<div data-role="page" id="pagina_expositores">
+		<div data-role="header" data-position="fixed">
+			<div class="logo"></div>
+			<div class="pleca"></div>
+			<a class="ui-btn-right" href="#inicio" data-role="button" data-inline="true" data-transition="slideup" data-direction="reverse" data-icon="back" data-iconpos="notext">Regresar</a>
+		</div>
+
+		<div data-role="main" class="ui-content">
+
+			<h2>EXPOSITORES</h2>
+
+			<a href="#prinsel_info" data-rel="popup" data-position-to="window" data-transition="pop">
+				<div class="expositores"><img src="img/expositores/prinsel.png" alt=""></div>
+			</a>
+
+			<div class="expositores"><img src="img/expositores/chicco.png" alt=""></div>
+			<div class="expositores"><img src="img/expositores/stokke.png" alt=""></div>
+			<div class="expositores"><img src="img/expositores/medica_sur.png" alt=""></div>
+
+			<div class="expositores"><img src="img/expositores/affective.png" alt=""></div>
+			<div class="expositores"><img src="img/expositores/bbtips.png" alt=""></div>
+			<div class="expositores"><img src="img/expositores/biobaby.png" alt=""></div>
+			<div class="expositores"><img src="img/expositores/grupo_pi.png" alt=""></div>
+			<div class="expositores"><img src="img/expositores/kiddies.png" alt=""></div>
+			<div class="expositores"><img src="img/expositores/neek.png" alt=""></div>
+			<div class="expositores"><img src="img/expositores/nenetin.png" alt=""></div>
+
+			<div data-role="popup" id="prinsel_info" data-overlay-theme="b" class="info_marcas">
+				<a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="back" data-theme="a" class="ui-btn-left">Close</a>
+				<h2>Prinsel</h2>
+			</div>
+			
+			
+
+		</div>
+
+	</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+	<div data-role="page" id="pagina_quienes">
+		<div data-role="header" data-position="fixed">
+			<div class="logo"></div>
+			<div class="pleca"></div>
+			<a class="ui-btn-right" href="#inicio" data-role="button" data-inline="true" data-transition="slideup" data-direction="reverse" data-icon="back" data-iconpos="notext">Regresar</a>
+		</div>
+
+		<div data-role="main" class="ui-content">
+
+			<h2>QUIENES SOMOS</h2>
+			<p>Mi bebé y yo es la revista que ha acompañado de cerca a las madres mexicanas por más de 15 años durante su embarazo, en sus dudas sobre de lactancia y en la hermosa experiencia de la maternidad, brindándoles información actual, interesante, oportuna y lo más importante avalada por especialistas, todo para que tu bebé tenga el mejor desarrollo y crezca sano y feliz, por algo somos la revista de familia más leída en México.</p>
+
+			<p>Una vez más nos complace invitarte a este espacio creado para ti: Expo Outlet Mi bebé y yo en donde encontrarás todo lo necesario para la salud, el bienestar y la felicidad de los más pequeños del hogar.</p>
+
+			<h3>Expo Outlet Mi bebé y yo</h3>
+			<p>¿Habías imaginado un lugar donde pudieras encontrar carriolas, biberones, chupones, andaderas, sillas de paseo, cunas, bambinetos, ropa y muchos accesorios de las mejores marcas como Prinsel, Baby Joyce, Mayoral, Zadari bebé, Mandi, Duerme sano, Mother Care, Prinsel, Hipoglos, Lamaze, Chicco, Boon, Mother Care, Sackitos, Método Bebé Políglota, Hipoglos, Andrómaco, Ecopipo, Tempra, Lamaze, Brica y boon a precios irresistibles, y además tener la oportunidad de asistir a conferencias impartidas por especialistas en salud y puericultura para tener los mejores consejos y resolver todas tus dudas sobre maternidad y primera infancia, aparte de acudir a pasarelas sobre las nuevas tendencias para tu bebé, y sin perder el toque de fin de semana disfrutando de un rato agradable en familia y ¿por qué no?, compartir y convivir con otras madres mexicanas.</p>
+
+			<p>¡La revista Mi bebé y yo lo hace posible! Asiste al Centro Banamex este 16, 17 y 18 de mayo, a partir de las 11:00 am y haz de Expo Outlet Mi bebé y yo un espacio propio. ¡Te esperamos!</p>
+
+			<div id="ligas_quienes">
+				<h3>Visita nuestros sitios</h3>
+
+				<a href="http://sferaeditores.com.mx"><div id="liga_sfera"><img src="img/logo_sfera.png"></div></a>
+
+				<a href="http://mibebeyyo.com.mx"><div id="liga_mib"><img src="img/logo_mib.png"></div></a>
+					
+			</div>
+
+		</div>
+
+	</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+	<div data-role="page" id="pagina_servicios">
+		<div data-role="header" data-position="fixed">
+			<div class="logo"></div>
+			<div class="pleca"></div>
+			<a class="ui-btn-right" href="#inicio" data-role="button" data-inline="true" data-transition="slideup" data-direction="reverse" data-icon="back" data-iconpos="notext">Regresar</a>
+		</div>
+
+		<div data-role="main" class="ui-content">
+
+			<h2>SERVICIOS</h2>
+
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>Guarderia</h3>
+					<p>Contaremos con una zona de guardería en la que tus hijos estarán cómodos y seguros, a cargo de personal capacitado para el cuidado de los pequeños. Ellos se divertirán mientras tu sólo te encargas de comprar.</p>
+				</div>
+
+				<div data-role="collapsible">
+					<h3>Cambiadores</h3>
+					<p>Aquí podrás asear a tu bebé en calma y con privacidad y así disfrutarán juntos de la visita sin incomodidades ni prisas.</p>
+				</div>
+
+				<div data-role="collapsible">
+					<h3>Zona de alimentación</h3>
+					<p>La hora de la comida no puede dejarse pasar y es por eso que se contará con periqueras para que puedas darle de comer a tu bebé.</p>
+				</div>
+
+				<div data-role="collapsible">
+					<h3>Zona de lactancia</h3>
+					<p>Esta zona está pensada especialmente para los más pequeños que nos visitan, aquí podrás amamantar a tu bebé tranquilamente y con la intimidad que se requiere.</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+	<div data-role="page" id="pagina_llegar">
+		<div data-role="header" data-position="fixed">
+			<div class="logo"></div>
+			<div class="pleca"></div>
+			<a class="ui-btn-right" href="#inicio" data-role="button" data-inline="true" data-transition="slideup" data-direction="reverse" data-icon="back" data-iconpos="notext">Regresar</a>
+		</div>
+
+		<div id="mapa"></div>
+
+
+	</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+	<div data-role="page" id="pagina_contacto">
+		<div data-role="header" data-position="fixed">
+			<div class="logo"></div>
+			<div class="pleca"></div>
+			<a class="ui-btn-right" href="#inicio" data-role="button" data-inline="true" data-transition="slideup" data-direction="reverse" data-icon="back" data-iconpos="notext">Regresar</a>
+		</div>
+
+		<div data-role="main" class="ui-content">
+
+			<h2>CONTACTO</h2>
+			<p>Rellenas los campos a continuacion y en breve te contactaremos</p>
+			<form id="formulario_contacto" autocomplete="off" data-ajax="false">
+
+				<label for="input_nombre">Tu nombre</label>
+				<input type="text" name="nombre" id="input_nombre" required>
+
+				<label for="input_email">Tu E-mail</label>
+				<input type="email" name="email" id="input_email" required>
+
+				<label for="input_comentarios">Tus dudas, comentarios, o inclusive tus quejas :S</label>
+				<textarea name="comentarios" id="input_comentarios" required></textarea>
+
+				<input type="button" name="submit" id="boton_enviar_comentario" value="Enviar comentarios">
+				
+			</form>
+
+			<div data-role="popup" id="status_formulario" data-overlay-theme="b">
+				<a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="back" data-theme="a" class="ui-btn-left">Close</a>
+				<p id="txt_status_formulario"></p>
+			</div>
+
+		</div>
+
+	</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+</body>
+
+</html>

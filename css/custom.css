@@ -1,0 +1,455 @@
+/* - - - - Hoja de Estilos Personalizada - - - - */
+
+html, body{
+	height: 100%;
+}
+
+*{
+	margin-left: 0;
+	margin-top: 0;
+	font-family: 'Arial';
+}
+
+.ui-page .ui-header {
+    background: -webkit-linear-gradient(top, #FFF, transparent);
+    background: -moz-linear-gradient(top, #FFF, transparent);
+    background: -ms-linear-gradient(top, #FFF, transparent);
+    background: -o-linear-gradient(top, #FFF, transparent);
+    background: linear-gradient(top, #FFF, transparent);
+    background: #FFF;
+    border: none;
+    /*border-bottom: 4px dashed #BCB3A6;*/
+}
+
+.ui-page .ui-btn-right{
+	margin-top: 20px;
+}
+
+.logo{
+	width: 350px;
+	height: 70px;
+	background-image: url('../img/logo.jpg');
+	display: inline-block;
+	background-size: 100% 100%;
+	margin-left: 20px;
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-ms-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+.pleca{
+	width: 100%;
+	display: none;
+	height: 4px;
+	background-image: url('../img/head_pleca.png');
+}
+
+.ui-page{
+	/*
+	background: -webkit-linear-gradient(top, #BEB4A8, #F6EFE5);
+	background: -moz-linear-gradient(top, #BEB4A8, #F6EFE5);
+	background: -ms-linear-gradient(top, #BEB4A8, #F6EFE5);
+	background: -o-linear-gradient(top, #BEB4A8, #F6EFE5);
+	background: linear-gradient(top, #BEB4A8, #F6EFE5);
+	*/
+	background: #BEB4A8;
+	background-image: url('../img/fondos/arbol.png'), url('../img/fondos/bicicleta.png'), url('../img/fondos/carreola.png'), url('../img/fondos/conejo.png'),url('../img/fondos/dados.png');
+	background-position: -10% -5%, 110% 20%, -5% 70%, 95% 75%, 5% 101%;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+.ui-page .ui-content{
+	background: rgba(255,255,255,.75);
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	min-width: 300px;
+}
+
+.menu_titulo{
+	position: absolute;
+	background-size: 100% 100%;
+}
+
+#expositores_txt{
+	background-image: url('../img/main_menu/expositores_txt.png');
+	width: 174px;
+	height: 54px;
+}
+#quienes_txt{
+	background-image: url('../img/main_menu/quienes_txt.png');
+	width: 258px;
+	height: 45px;
+}
+#servicios_txt{
+	background-image: url('../img/main_menu/servicios_txt.png');
+	width: 192px;
+	height: 49px;
+}
+#llegar_txt{
+	background-image: url('../img/main_menu/llegar_txt.png');
+	width: 230px;
+	height: 44px;
+}
+#contacto_txt{
+	background-image: url('../img/main_menu/contacto_txt.png');
+	width: 148px;
+	height: 40px;
+}
+#fantasma_txt{
+	background-image: url('../img/main_menu/quienes_txt.png');
+	width: 258px;
+	height: 45px;
+}
+
+
+.menu_item{
+	width: 450px;
+	height: 250px;
+	display: inline-block;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: 20px;
+	position: relative;
+	opacity: .8;
+	background-size: 100% 100%;
+
+	-webkit-transition: all 250ms;
+	-moz-transition: all 250ms;
+	-ms-transition: all 250ms;
+	-o-transition: all 250ms;
+	transition: all 250ms;
+}
+.menu_item:hover{
+	opacity: 1;
+}
+
+#menu_expositores{
+	background-image: url('../img/main_menu/expositores_back.jpg');
+}
+#menu_quienes{
+	background-image: url('../img/main_menu/quienes_back.jpg');
+}
+#menu_servicios{
+	background-image: url('../img/main_menu/servicios_back.jpg');
+}
+#menu_llegar{
+	background-image: url('../img/main_menu/llegar_back.jpg');
+}
+#menu_contacto{
+	background-image: url('../img/main_menu/contacto_back.jpg');
+}
+#menu_fantasma{
+	background-image: url('../img/main_menu/quienes_back.jpg');
+}
+
+
+/*
+.img_fondos{
+	position: absolute;
+	background: #abc123;
+	width: 400px;
+	height: 400px;
+}
+#fondo_arbol{
+	width: 600px;
+	height: 286px;
+	background-image: url('../img/fondos/arbol.png');
+	top: 0;
+	left: -100px;
+}*/
+
+
+
+
+
+.expositores{
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	background: rgba(0,0,0,.0);
+	margin: 0 auto;
+	margin-top: -5px;
+	margin-right: 30px;
+	position: relative;
+	-webkit-transition: all 250ms;
+	-moz-transition: all 250ms;
+	-ms-transition: all 250ms;
+	-o-transition: all 250ms;
+	transition: all 250ms;
+}
+.expositores img{
+	width: 100%;
+	height: 100%;
+}
+p{
+	text-align: left;
+}
+h1, h2, h3, h4{
+	color: #E8447D;
+}
+
+#input_nombre, #input_email{
+	outline: 0;
+	border: none;
+	text-align: center;
+}
+
+#liga_sfera, #liga_mib{
+	height: 30px;
+	display: inline-block;
+	background: rgba(0,0,0,.05);
+	box-shadow: 2px 2px 2px #888;
+	padding: 15px;
+	border-radius: 10px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+#liga_sfera img, #liga_mib img{
+	height: 100%;
+}
+
+
+#mapa{
+	width: 100%;
+	height: 90vh;
+	background: #afcefe;
+}
+.overlay{
+	padding: 5px;
+	text-align: center;
+	background: rgba(158,94,165,.4);
+	font-size: 15px;
+	margin-top: 15px;
+	border-radius: 5px;
+	color: #FFF;
+	font-weight: normal;
+}
+
+#txt_status_formulario{
+	padding: 20px 5px;
+}
+
+.info_marcas{
+	padding: 10px 0px;
+}
+
+
+/* - - - - - - - - - - -  - AHORA EL ROLLO RESPONSIVE - - - - - - - - - - - - */
+
+@media screen and (min-width: 1000px){
+
+	.menu_item{
+		width: 450px;
+		height: 250px;
+		display: inline-block;
+		background: #888;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-left: 20px;
+		position: relative;
+		background-size: 100% 100%;
+	}
+
+	.ui-page .ui-content{
+		width: 960px;
+	}
+	.logo{
+		width: 350px;
+		height: 70px;
+	}
+	.ui-page .ui-btn-right{
+		margin-top: 20px;
+	}
+
+	.menu_titulo{
+		-webkit-transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-ms-transform: scale(1,1);
+		-o-transform: scale(1,1);
+		transform: scale(1,1);
+		top: 0px;
+		right: 0px;
+	}
+
+	.expositores{
+		width: 160px;
+		height: 160px;
+		margin-right: 30px;
+	}
+
+	.ui-page{
+		background-size: 600px 286px, 400px 314px, 250px 259px, 80px 110px, 100px 45px;
+	}
+
+}
+
+
+@media screen and (max-width: 999px) and (min-width: 700px){
+	.ui-page .ui-content{
+		width: 650px;
+	}
+
+	.menu_item{
+		width: 300px;
+		height: 160px;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-right: 10px;
+		opacity: 1;
+		background-size: 100% 100%;
+	}
+	.logo{
+		width: 300px;
+		height: 60px;
+	}
+	.ui-page .ui-btn-right{
+		margin-top: 15px;
+	}
+
+	.menu_titulo{
+		-webkit-transform: scale(.85,.85);
+		-moz-transform: scale(.85,.85);
+		-ms-transform: scale(.85,.85);
+		-o-transform: scale(.85,.85);
+		transform: scale(.85,.85);
+		top: -5px;
+		right: -15px;
+	}
+
+	.expositores{
+		width: 160px;
+		height: 160px;
+		margin-right: 20px;
+	}
+
+	.ui-page{
+		background-size: 500px 240px, 350px 275px, 220px 230px, 70px 96px, 90px 40px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 699px) and (min-width: 500px){
+	.ui-page .ui-content{
+		width: 450px;
+	}
+
+	.menu_item{
+		width: 200px;
+		height: 160px;
+		margin: 0 auto;
+		margin-top: 5px;
+		margin-right: 5px;
+		opacity: 1;
+		background-size: 100% 100%;
+	}
+	.logo{
+		width: 250px;
+		height: 50px;
+	}
+	.ui-page .ui-btn-right{
+		margin-top: 10px;
+	}
+
+	.menu_titulo{
+		-webkit-transform: scale(.75,.75);
+		-moz-transform: scale(.75,.75);
+		-ms-transform: scale(.75,.75);
+		-o-transform: scale(.75,.75);
+		transform: scale(.75,.75);
+		top: -5px;
+		right: -25px;
+	}
+
+	#menu_expositores{
+	background-image: url('../img/main_menu/expositores_small_back.jpg');
+	}
+	#menu_quienes{
+		background-image: url('../img/main_menu/quienes_small_back.jpg');
+	}
+	#menu_servicios{
+		background-image: url('../img/main_menu/servicios_small_back.jpg');
+	}
+	#menu_llegar{
+		background-image: url('../img/main_menu/llegar_small_back.jpg');
+	}
+	#menu_contacto{
+		background-image: url('../img/main_menu/contacto_small_back.jpg');
+	}
+	#menu_fantasma{
+		background-image: url('../img/main_menu/quienes_small_back.jpg');
+	}
+
+	.expositores{
+		width: 140px;
+		height: 140px;
+		margin-right: 5px;
+	}
+
+	.ui-page{
+		background-size: 400px 190px, 300px 236px, 190px 197px, 60px 82px, 80px 36px;
+	}
+
+}
+
+
+@media screen and (max-width: 499px) and (min-width: 320px){
+	.ui-page .ui-content{
+		width: 300px;
+	}
+
+	.menu_item{
+		width: 290px;
+		height: 160px;
+		margin: 0 auto;
+		margin-top: 10px;
+		display: block;
+		opacity: 1;
+		background-size: 100% 100%;
+	}
+	.logo{
+		width: 200px;
+		height: 40px;
+	}
+	.ui-page .ui-btn-right{
+		margin-top: 0px;
+	}
+
+	.menu_titulo{
+		-webkit-transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-ms-transform: scale(1,1);
+		-o-transform: scale(1,1);
+		transform: scale(1,1);
+		top: 0px;
+		right: 0px;
+	}
+
+	.expositores{
+		width: 125px;
+		height: 125px;
+		margin-right: 20px;
+	}
+
+	.ui-page{
+		background-size: 300px 140px, 240px 190px, 160px 165px, 50px 68px, 65px 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

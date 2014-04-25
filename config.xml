@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.example"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Beta Expo App</name>
+
+    <preference name="Orientation" value="landscape"/>
+    <preference name="Fullscreen" value="true"/>
+
+    <description>
+        Primera beta de App Expo 
+    </description>
+
+    <author href="https://build.phonegap.com" email="pixiestux@gmail.com">
+        By Pixiestux
+    </author>
+
+    
+
+    <icon src="img/gap/icon.png" width="64" height="64"/>
+    <gap:splash src="splash.jpg" />
+
+</widget>
+
